@@ -10,7 +10,7 @@ export const About = () => {
         About <span className="text-red-500">Me</span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="border border-white/20 rounded-lg p-6">
+      <div className="border border-red-600 rounded-3xl p-6">
           <h3 className="text-2xl font-bold mb-2">01. Background</h3>
           <p className="text-white/50 mb-6">
             I'm a passionate full-stack developer with a strong foundation in
@@ -39,14 +39,14 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="border border-white/20 rounded-lg p-6">
+        <div className="border border-red-600 rounded-3xl p-6">
           <h3 className="text-2xl font-bold mb-2">02. Expertise</h3>
           <p className="text-white/50">
             I specialize in building robust and scalable web applications using
             modern technologies. My expertise spans both front-end and back-end
             development, allowing me to create seamless, end-to-end solutions.
           </p>
-          <div className="mt-4 relative border border-white/20 rounded-lg p-4 h-[220px] overflow-hidden">
+          <div className="mt-4 relative border border-white/20 rounded-3xl p-4 h-[220px] overflow-hidden">
             <img
               src={project1}
               alt="Project 1"
@@ -55,14 +55,14 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="border border-white/20 rounded-lg p-6">
+        <div className="border border-red-600 rounded-3xl p-6">
           <h3 className="text-2xl font-bold mb-2">03. Skills</h3>
           <p className="text-white/50 mb-4">
             I'm proficient in a wide range of technologies and constantly
             expanding my skill set to stay at the forefront of web development.
           </p>
           <div className="grid grid-cols-1 text-center gap-4">
-            <div className="border border-white/20 rounded-lg p-3">
+            <div className="border border-white/20 rounded-3xl p-3">
               <h4 className="text-red-500 font-medium mb-2">Frontend</h4>
               <ul className="text-white/50 space-y-1 text-sm">
                 <li>React/Next.js</li>
@@ -71,7 +71,7 @@ export const About = () => {
                 <li>Framer Motion</li>
               </ul>
             </div>
-            <div className="border border-white/20 rounded-lg p-3">
+            <div className="border border-white/20 rounded-3xl p-3">
               <h4 className="text-red-500 font-medium mb-2">Backend</h4>
               <ul className="text-white/50 space-y-1 text-sm">
                 <li>Node.js</li>
@@ -85,7 +85,7 @@ export const About = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-        <div className="border border-white/20 rounded-lg p-6">
+        <div className="border border-red-600 rounded-3xl p-6">
           <div className="space-y-4">
             <div>
               <label className="block text-sm font-medium mb-1">
@@ -125,8 +125,8 @@ export const About = () => {
           </p>
         </div>
 
-        <div className="border border-white/20 rounded-lg p-6 flex flex-col justify-between">
-          <div className="relative border border-white/20 rounded-lg p-4 h-[200px] overflow-hidden">
+        <div className="border border-red-600 rounded-3xl p-6 flex flex-col justify-between">
+          <div className="relative border border-white/20 rounded-3xl p-4 h-[200px] overflow-hidden">
             <img
               src={project2}
               alt="Project 2"

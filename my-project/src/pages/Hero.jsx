@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import profilepic from "../assets/images/profilepic.png";
 
+
 export const Hero = () => {
   return (
     <div className="relative overflow-clip min-h-screen text-white bg-[linear-gradient(to_bottom,#000,#300000_35%,#992222_67%,#FF5555_85%)]">
@@ -46,9 +47,17 @@ export const Hero = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 className="px-6 py-3 bg-red-500 rounded-full font-medium hover:bg-red-600 transition-colors"
+                onClick={() => {
+                  navigator.clipboard.writeText('jonatroiano@gmail.com').then(() => {
+                    alert('Email copiata negli appunti!');
+                  }).catch(err => {
+                    alert('Errore nel copiare l\'email.');
+                  });
+                }}
               >
                 Contact Me
               </motion.button>
+             
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 className="px-6 py-3 border border-white/20 rounded-full font-medium hover:bg-white/10 transition-colors"
@@ -57,6 +66,7 @@ export const Hero = () => {
               </motion.button>
             </div>
           </motion.div>
+          
         </div>
 
         <motion.div
